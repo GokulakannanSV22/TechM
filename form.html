@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EmployeeForm</title>
+</head>
+
+<body>
+
+
+
+    <fieldset>
+        <legend> <strong>Personal Information </strong></legend>
+        <form action="">
+            <label for="">FirstName <span style="color: red;">*</span> :</label>
+            <input type="text" placeholder="Enter your FirstName " pattern="[a-zA-Z]+" required>
+            <br>
+            <label for="">LastName <span style="color: red;">*</span> :</label>
+            <input type="text" placeholder="Enter Your Last Name " pattern="[a-zA-Z]+" required>
+            <br>
+            <label for="">Email <span style="color: red;">*</span> :</label>
+            <input type="email" placeholder="Enter your Email" required>
+            <br>
+            <label for="" style="color: gray;">Example: yourname123@gmail.com</label>
+            <br>
+            <label for="">PhoneNumber <span style="color: red;">*</span></label>
+            <input type="tel" placeholder="Enter Your Phone Number " pattern="[0-9]{10}" required>
+            <br>
+            <label for="">Gender <span style="color: red;">*</span></label>
+            <input type="radio" name="gender" required> Male <input type="radio" name="gender">Female <input
+                type="radio" name="gender">Others
+            <br>
+            <label for="">Date of Birth <span style="color: red;">*</span> :</label>
+            <input type="date" required>
+            <br>
+            <label for="">Martial Status <span style="color: red;">*</span> :</label>
+            <input type="radio" name="Status" required>Single <input type="radio" name="Status">Married
+            <br>
+            <label for="">Spouse Name:(if Applicable)</label>
+            <input type="text" placeholder="Enter Spouse Name">
+
+           
+
+
+    </fieldset>
+    <br>
+    <fieldset>
+        <legend> <strong> Employement Details </strong> </legend>
+
+
+        <label for="">DepartMent <span style="color: red;">*</span></label>
+        <select name="" id="" required>
+            <option value="">Select DepartMent</option>
+            <option value="">Development</option>
+            <option value="">Testing</option>
+            <option value="">Human resource</option>
+            <option value="">IT</option>
+            <option value="">Marketing</option>
+        </select>
+        <br>
+        <label for="">Years of experience :</label>
+        <input type="number" placeholder="Enter experience in years" min="0">
+        <br>
+        <label for="">Skills:</label>
+        <input type="checkbox">HTML <input type="checkbox">CSS <input type="checkbox">JavaScript <input
+            type="checkbox">SQL <input type="checkbox">Core-Java
+        <br>
+        <label for="">Certifications</label>
+        <br>
+        <textarea style="resize: none;" placeholder="List Your Certifications" name="" id=""></textarea>
+        <br>
+        <label for="">Profile Picture </label>
+        <br>
+        <input type="file" accept=".png, .jpg">
+        <br>
+        <label for="" style="color: gray;">Allowed Formats : JPG,PNG</label>
+
+
+    </fieldset>
+
+    <fieldset>
+        <legend><strong> Emergency Contact </strong> </legend>
+
+
+        <label for="">Contact Name <span style="color: red;">*</span> :</label>
+        <input type="text" placeholder="Enter Contact Name " pattern="[a-zA-Z]+" required>
+        <br>
+        <label for="">Contact Phone <span style="color: red;">*</span> :</label>
+        <input type="text" name="" id="" placeholder="Enter Contact Phone" pattern="[0-9]{10}" required>
+        <br>
+        <label for="">RelationShip <span style="color: red;">*</span> :</label>
+        <input type="text" placeholder="Enter RelationShip">
+        <br>
+        <label for="" style="color: gray;">Example:Parent,Spouse</label>
+        <br>
+
+
+    </fieldset>
+
+    <fieldset>
+        <legend> <strong> Address Details </strong> </legend>
+
+
+        <label for="">Address <span style="color: red;">*</span></label>
+        <br>
+        <textarea name="" id="" placeholder="Enter Your Address"></textarea>
+
+    </fieldset>
+
+    <fieldset>
+        <legend><strong>Login Details</strong></legend>
+
+
+        <label for="">UserName <span style="color: red;">*</span> :</label>
+        <input type="text" placeholder="choose your UserName">
+        <br>
+
+        <label for="">Password <span style="color: red;">*</span> :</label>
+        <input type="password" name="" id="" placeholder="Enter Password">
+        <br>
+        <label for="">Confirm Password <span style="color: red;">*</span> :</label>
+        <input type="password" name="" id="" placeholder="Re-Enter Your Password">
+
+    </fieldset>
+
+    <input type="submit" name="" id="" value="Register" placeholder="Register">
+    <input type="reset" value="ClearForm" name="" id="">
+    </form>
+
+</body>
+
+</html>
